@@ -13,7 +13,7 @@
 
     <!-- Home Carousel section -->
     <section class="home">
-        <div id="default-carousel" class="relative w-full min-h-[75vh]" data-carousel="slide">
+        <div id="default-carousel" class="relative w-full min-h-[75vh] pb-10" data-carousel="slide">
             <!-- Carousel wrapper -->
             <div class="relative min-h-[75vh] overflow-hidden rounded-lg bg-silver">
                 <!-- Item 1 -->
@@ -100,18 +100,17 @@
                 </span>
             </button>
         </div>
-
     </section>
 
     {{-- About --}}
     <section class="clients" id="about">
-        <div class="col-md-12">
+        <div class="mt-8">
             <div class="flex justify-center item-center">
                 <h1 class="text-center text-xl lg:text-3xl mt-4 mb-4 font-semibold  transition-all duration-[1.3s]"
                     data-observerable_elem>About</h1>
             </div>
         </div>
-        <div class=" md:grid md:grid-cols-2 mr-8 ml-8">
+        <div class=" md:grid md:grid-cols-2 mx-8 my-8">
             <!-- text content -->
             <div>
                 <h1 class="text-sm md:text-md lg:text-2xl mb-6 md:px-8 justify-center item-center text-justify text-justify transition-all duration-[1s]"
@@ -132,7 +131,7 @@
             </div>
             <div class="flex flex-wrap justify-end mb-10">
                 <img data-observerable_elem src="{{asset('assets/img/img-about.webp')}}" alt="Person using smartphone"
-                    class="md:w-70% opacity-0.transition-all duration-[0.3s] hover:scale-105"
+                    class="md:w-70% shadow-xl opacity-0.transition-all duration-[0.3s] hover:scale-105"
                     style="border-radius: 10px;">
             </div>
         </div>
@@ -141,53 +140,63 @@
     <!-- News -->
     <section class="news" id='news'>
         <!-- heading and subheading -->
-        <h1 class="text-center text-3xl sm:text-xl md:text-xl font-semibold opacity-0 transition-all duration-[1.3s]" data-observerable_elem>
+        <h1 class="text-center text-xl lg:text-3xl font-semibold mt-16 opacity-0 transition-all duration-[1.3s]"
+            data-observerable_elem>
             Latest News</h1>
         <p class="text-center opacity-0 transition-all duration-[1.3s]" data-observerable_elem>
             See what we've been up to
         </p>
 
-        <div class="client-logos-con flex w-full justify-evenly mt-10 mb-16 flex-wrap">
-            <div class="opacity-0.transition-all duration-[1.3s] w-[20%] min-w-[20rem]  grid justify-center ml-4"
-                data-observerable_elem="">
+        <div class="grid md:grid-cols-2 md:gap-4 lg:grid-cols-4 lg:gap-8 mb-12 mx-8">
+            <div class="opacity-0.transition-all duration-[0.2s] hover:scale-105">
+                <div class="mt-2 block max-w-sm md:max-w-md lg:max-w-lg p-6 bg-white border border-gray-200 rounded-lg shadow"
+                    data-observerable_elem="">
 
-                <img class="m-6" src="{{asset('assets/icons/community/Icon-1.png')}}" alt="Community Icon 1">
-                <h1 class="text-md lg:text-2xl font-semibold mb-4 ">
-                    Membership Organisations
-                </h1>
-                <p class="sm:text-sm md:text-md lg:text-lg">Our membership management software provides full automation of membership renewals and
-                    payments
-                </p>
+                    <img class="mx-6" src="{{asset('assets/icons/community/Icon-1.png')}}" alt="Community Icon 1">
+                    <h1 class="text-md lg:text-2xl font-semibold mb-4 ">
+                        Membership Organisations
+                    </h1>
+                    <p class="text-sm md:text-md lg:text-lg">Our membership management software provides full
+                        automation of membership renewals and
+                        payments
+                    </p>
+                </div>
             </div>
+            <div class="opacity-0.transition-all duration-[0.2s] hover:scale-105">
+                <div class="mt-2 block max-w-sm md:max-w-md lg:max-w-lg p-6 bg-white border border-gray-200 rounded-lg shadow"
+                    data-observerable_elem="">
 
-            <div class="opacity-0.transition-all duration-[1.3s] w-[20%] min-w-[20rem]  grid justify-center ml-8"
-                data-observerable_elem="">
-
-                <img class="m-6" src="{{asset('assets/icons/community/Icon-2.png')}}" alt="Community Icon 2">
-                <h1 class="text-md lg:text-2xl font-semibold mb-4 ">National Associations</h1>
-                <p class="sm:text-sm md:text-md lg:text-lg">Our membership management software provides full automation of membership renewals and
-                    payments
-                </p>
+                    <img class="mx-6" src="{{asset('assets/icons/community/Icon-2.png')}}" alt="Community Icon 2">
+                    <h1 class="text-md lg:text-2xl font-semibold mb-4 ">National Associations</h1>
+                    <p class="text-sm md:text-md lg:text-lg">Our membership management software provides full
+                        automation of membership renewals and
+                        payments
+                    </p>
+                </div>
             </div>
+            <div class="opacity-0.transition-all duration-[0.2s] hover:scale-105">
+                <div class="mt-2 block max-w-sm md:max-w-md lg:max-w-lg p-6 bg-white border border-gray-200 rounded-lg shadow"
+                    data-observerable_elem="">
 
-            <div class="opacity-0.transition-all duration-[1.3s] w-[20%] min-w-[20rem]  grid justify-center ml-8"
-                data-observerable_elem="">
-
-                <img class="m-6" src="{{asset('assets/icons/community/Icon-3.png')}}" alt="Community Icon 3">
-                <h1 class="text-md lg:text-2xl font-semibold mb-4 ">Clubs And Groups</h1>
-                <p class="sm:text-sm md:text-md lg:text-lg">Our membership management software provides full automation of membership renewals and
-                    payments
-                </p>
+                    <img class="mx-6" src="{{asset('assets/icons/community/Icon-3.png')}}" alt="Community Icon 3">
+                    <h1 class="text-md lg:text-2xl font-semibold mb-4 ">Clubs And Groups</h1>
+                    <p class="text-sm md:text-md lg:text-lg">Our membership management software provides full
+                        automation of membership renewals and
+                        payments
+                    </p>
+                </div>
             </div>
+            <div class="opacity-0.transition-all duration-[0.2s] hover:scale-105">
+                <div class="mt-2 block max-w-sm md:max-w-md lg:max-w-lg p-6 bg-white border border-gray-200 rounded-lg shadow"
+                    data-observerable_elem="">
 
-            <div class="opacity-0.transition-all duration-[1.3s] w-[20%] min-w-[20rem]  grid justify-center ml-8"
-                data-observerable_elem="">
-
-                <img class="m-6" src="{{asset('assets/icons/community/Icon-3.png')}}" alt="Community Icon 3">
-                <h1 class="text-md lg:text-2xl font-semibold mb-4 ">Clubs And Groups</h1>
-                <p class="sm:text-sm md:text-md lg:text-lg">Our membership management software provides full automation of membership renewals and
-                    payments
-                </p>
+                    <img class="mx-6" src="{{asset('assets/icons/community/Icon-3.png')}}" alt="Community Icon 3">
+                    <h1 class="text-md lg:text-2xl font-semibold mb-4 ">Clubs And Groups</h1>
+                    <p class="text-sm md:text-md lg:text-lg">Our membership management software provides full
+                        automation of membership renewals and
+                        payments
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -195,7 +204,7 @@
     <!-- Achivement -->
     <section class="achivement">
         <!-- heading and subheading -->
-        <h1 class="text-center text-3xl mt-4 mb-4 font-semibold opacity-0 transition-all duration-[1.3s]"
+        <h1 class="text-center text-xl lg:text-3xl mt-4 mb-4 font-semibold opacity-0 transition-all duration-[1.3s]"
             data-observerable_elem>Achivements</h1>
 
         <div id="default-carousel" class="relative w-full " data-carousel="slide">
@@ -246,7 +255,7 @@
     <!-- Collaboration -->
     <section class="community grid justify-center mt-14 bg-silver" id="collaborations">
         <!-- heading and subheading -->
-        <h1 class="text-center text-3xl mt-4 mb-4 font-semibold opacity-0 transition-all duration-[1.3s]"
+        <h1 class="text-center text-xl lg:text-3xl mt-4 mb-4 font-semibold opacity-0 transition-all duration-[1.3s]"
             data-observerable_elem>Our Collaboration</h1>
 
         <!-- community cards container -->
@@ -260,10 +269,10 @@
                             d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z" />
                     </svg>
                     <h5
-                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white opacity-0.transition-all duration-[0.2s] hover:text-brand_primary">
+                        class="mb-2 text-md lg:text-2xl font-bold tracking-tight text-gray-900 dark:text-white opacity-0.transition-all duration-[0.2s] hover:text-brand_primary">
                         Quality Culture
                     </h5>
-                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                    <p class="text-sm md:text-md lg:text-lg font-normal text-gray-700 dark:text-gray-400">
                         Unlike other companies, we are a UX first development company. Projects are driven by designers
                         and
                         they make sure design and experiences translate to code.
@@ -284,10 +293,10 @@
                     </svg>
 
                     <h5
-                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white opacity-0.transition-all duration-[0.2s] hover:text-brand_primary">
+                        class="mb-2 text-md lg:text-2xl font-bold tracking-tight text-gray-900 dark:text-white opacity-0.transition-all duration-[0.2s] hover:text-brand_primary">
                         Ruang Belajar
                     </h5>
-                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                    <p class="text-sm md:text-md lg:text-lg font-normal text-gray-700 dark:text-gray-400">
                         Unlike other companies, we are a UX first development company. Projects are driven by designers
                         and
                         they make sure design and experiences translate to code.
@@ -310,10 +319,10 @@
                     </svg>
 
                     <h5
-                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white opacity-0.transition-all duration-[0.2s] hover:text-brand_primary">
+                        class="mb-2 text-md lg:text-2xl font-bold tracking-tight text-gray-900 dark:text-white opacity-0.transition-all duration-[0.2s] hover:text-brand_primary">
                         OPEX
                     </h5>
-                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                    <p class="text-sm md:text-md lg:text-lg font-normal text-gray-700 dark:text-gray-400">
                         Unlike other companies, we are a UX first development company. Projects are driven by designers
                         and
                         they make sure design and experiences translate to code.
@@ -334,10 +343,10 @@
 
 
                     <h5
-                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white opacity-0.transition-all duration-[0.2s] hover:text-brand_primary">
+                        class="mb-2 text-md lg:text-2xl font-bold tracking-tight text-gray-900 dark:text-white opacity-0.transition-all duration-[0.2s] hover:text-brand_primary">
                         Dynamic Training
                     </h5>
-                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                    <p class="text-sm md:text-md lg:text-lg font-normal text-gray-700 dark:text-gray-400">
                         Unlike other companies, we are a UX first development company. Projects are driven by designers
                         and
                         they make sure design and experiences translate to code.
@@ -350,7 +359,7 @@
     <!-- Departments -->
     <section class="community grid justify-center mt-14" id="departments">
         <!-- heading and subheading -->
-        <h1 class="text-center text-3xl mt-4 mb-4 font-semibold opacity-0 transition-all duration-[1.3s]"
+        <h1 class="text-center text-xl lg:text-3xl mt-4 mb-4 font-semibold opacity-0 transition-all duration-[1.3s]"
             data-observerable_elem>Departments</h1>
         <!-- community cards container -->
 
@@ -655,4 +664,5 @@
     @include('layout.footer')
 
 </body>
+
 </html>
