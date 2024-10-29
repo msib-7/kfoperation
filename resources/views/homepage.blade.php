@@ -84,7 +84,7 @@
 
     <!-- Home Carousel section -->
     <section class="home">
-        <div id="default-carousel" class="relative w-full min-h-[75vh]" data-carousel="static">
+        <div id="default-carousel" class="relative w-full min-h-[75vh]" data-carousel="slide">
             <!-- Carousel wrapper -->
             <div class="relative min-h-[75vh] overflow-hidden rounded-lg bg-silver">
                 <!-- Item 1 -->
@@ -269,7 +269,7 @@
         <h1 class="text-center text-3xl mt-4 mb-4 font-semibold opacity-0 transition-all duration-[1.3s]"
             data-observerable_elem>Achivements</h1>
 
-        <div id="default-carousel" class="relative w-full " data-carousel="static">
+        <div id="default-carousel" class="relative w-full " data-carousel="slide">
             <!-- Carousel wrapper -->
             <div class="relative min-h-[25vh] md:min-h-[30vh] lg:min-h-[65vh] overflow-hidden rounded-lg mr-8 ml-8">
                 <!-- Item 1 -->
