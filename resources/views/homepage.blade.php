@@ -86,7 +86,7 @@
     <section class="home">
         <div id="default-carousel" class="relative w-full min-h-[75vh]" data-carousel="static">
             <!-- Carousel wrapper -->
-            <div class="relative min-h-[65vh] overflow-hidden rounded-lg bg-silver">
+            <div class="relative min-h-[75vh] overflow-hidden rounded-lg bg-silver">
                 <!-- Item 1 -->
                 <div class="hidden duration-700 ease-in-out object-cover grid items-center" data-carousel-item>
                     <div class="grid grid-cols-none md:grid-cols-2 md:mr-8 md:ml-8 justify-center items-center">
@@ -113,14 +113,35 @@
                     </div>
                 </div>
                 <!-- Item 2 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/docs/images/carousel/carousel-2.svg"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <div class="hidden duration-700 ease-in-out object-cover grid items-center" data-carousel-item>
+                    <div class="grid grid-cols-none md:grid-cols-2 md:mr-8 md:ml-8 justify-center items-center">
+                        <div>
+                            <!-- text content -->
+                            <div class="transition-all duration-[1.5s] opacity-0 txt-content md:w-7/8 w-full"
+                                data-observerable_elem>
+                                <h1 class="text-3xl text-center md:text-5xl font-bold text-d_grey">
+                                    To Improve Health <br>
+                                    <span class="text-brand_primary"> For A Better Life</span></h1>
+
+                                <div class="flex justify-center">
+                                    <a class="text-white bg-brand_primary  pt-2 pb-2 rounded-lg mt-7 text w-[100%] flex justify-center items-center self-end md:w-[8rem] mb-5"
+                                        href="/Contact/"><small>Let's get started</small></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex hidden md:inline-flex justify-center">
+                            <!-- Elevate Your Business section -->
+                            <img data-observerable_elem src="{{asset('assets/illustrations/user smart phone.png')}}"
+                                alt="Person using smartphone" class="w-3/5 opacity-0 transition-all duration-[1s]">
+
+                        </div>
+                    </div>
                 </div>
                 <!-- Item 3 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/docs/images/carousel/carousel-3.svg"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <img src="{{asset('assets/img/format-size.png')}}"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        style="object-fit: scale-down;">
                 </div>
             </div>
             <!-- Slider controls -->
