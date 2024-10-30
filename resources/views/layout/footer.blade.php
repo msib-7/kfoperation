@@ -1,9 +1,9 @@
-<footer class="min-h-96 flex bg-brand_black text-white items-center flex-col">
+<footer class="min-h-[45vh] flex bg-brand_black text-white items-center flex-col ">
     <!-- brand and copyright -->
-    <div class="flex flex-col w-[100%] md:w-[80%] md:justify-start">
+    <div class="flex flex-col w-[100%] md:w-[80%] md:justify-start my-12">
 
         <!-- brand icon -->
-        <img src="{{asset('assets/img/kalbe_farma_svg.svg')}}" alt="KalbeFarma" class="w-44 mt-10 mb-5">
+        <img src="{{asset('assets/img/logo_kalbe_black.png')}}" alt="KalbeFarma" class="w-44 invert">
 
         <p>
             Factory <br>
@@ -17,7 +17,7 @@
             </small>
         </p>
         <br>
-        <p>
+        <p class="mb-5">
             <svg width="176" height="32" viewBox="0 0 176 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_303_1429)">
                     <a href="">
@@ -57,7 +57,6 @@
                     </clipPath>
                 </defs>
             </svg>
-
         </p>
     </div>
 </footer>
