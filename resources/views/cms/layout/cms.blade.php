@@ -89,7 +89,7 @@
                     const reader = new FileReader();
                     reader.onload = (e) => {
                         imagePreview.innerHTML =
-                            `<img src="${e.target.result}" class="max-h-48 rounded-lg mx-auto" alt="Image preview" />`;
+                            `<img src="${e.target.result}" class="max-h-48 rounded-lg mx-auto" alt="Image preview" style="width:100%; height:100%; max-height:300px; object-fit:cover;"/>`;
                         imagePreview.classList.remove('border-dashed', 'border-2', 'border-gray-400');
 
                         // Add event listener for image preview only once
