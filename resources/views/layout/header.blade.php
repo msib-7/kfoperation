@@ -25,9 +25,9 @@
                     style="min-width: 50px; max-width: 100px; width: 100%;">
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                <button type="button"
+                <a type="button" href="#contact-us"
                     class="text-white bg-brand_primary hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
-                    Contact us</button>
+                    Contact us</a>
                 <button data-collapse-toggle="navbar-sticky" type="button"
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                     aria-controls="navbar-sticky" aria-expanded="false">
