@@ -47,7 +47,8 @@
         @foreach ($dataCarousel as $data)
         <div class="hidden duration-700 ease-in-out object-cover grid items-center" data-carousel-item>
             <img src="{{asset('assets/img/carousel/'.$data->carousel_img)}}"
-                class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2 object-contain h-full">
+                class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2 object-contain h-full"
+                style="width: 100%; height:100%; max-height:800px; object-fit:cover;">
         </div>
         @endforeach
         </div>
@@ -324,7 +325,7 @@
             <!-- community cards container -->
 
             <div class="grid md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-8 mx-8">
-                <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
+                <div class="opacity-0.transition- focus:-translate-y-6 duration-[0.6s] hover:scale-105">
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="https://planttechdev.wixstudio.io/production" target="blank">
