@@ -113,7 +113,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <span id="text-caption"></span>
+                <span id="text-caption" class=""></span>
             </div>
         </div>
     </div>
@@ -135,8 +135,8 @@
             type: "GET",
             cache: false,
             success: function (response) {
-                const cleanedString = removeHtmlTags(response.data.caption);
-                $('#text-caption').text(cleanedString);
+                $('#text-caption').text("n/a");
+                $('#text-caption').text(removeHtmlTags(response.data.caption));
             }
         });
     });
