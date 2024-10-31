@@ -1,6 +1,6 @@
 @extends('cms.layout.cms')
 @section('cms-content')
-<div class="col-sm-12 col-lg-8">
+<div class="col-sm-12 col-lg-7">
     <div class="card">
         <div class="card-header">
             <div class="d-flex align-items-center">
@@ -15,7 +15,7 @@
                             <?php $no=1;?>
                             @foreach ($dataCarousel as $data)
                             <div class="carousel-item <?php if($no == 1){echo 'active'; $no++;}?>">
-                                <img class="d-block w-100 mb-2" alt=""
+                                <img class="d-block w-100 mb-2" style="width:100%; height:100%; max-height:500px; object-fit:cover;"
                                     src="{{asset('assets/img/carousel/'.$data->carousel_img)}}">
                                 <div class="d-flex flex-column">
                                     <div class="row">
@@ -43,7 +43,7 @@
         </div>
     </div>
 </div>
-<div class="col-sm-12 col-lg-4">
+<div class="col-sm-12 col-lg-5">
     {{-- Form Add --}}
     <div class="col-12">
         <div class="card">
@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="card-body">
-                <div id="image-preview" class="max-w-sm items-center mx-auto text-center cursor-pointer">
+                <div id="image-preview" class="max-w-sm items-center mx-auto text-center cursor-pointer" style="width:100%; height:100%; max-height:500px; object-fit:cover;">
                 </div>
                 <form action="{{url('/add-carousel')}}" method="post" enctype="multipart/form-data">
                     @csrf
