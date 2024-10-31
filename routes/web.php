@@ -14,6 +14,7 @@ Route::middleware('guest')->group(function () {
 
 Route::middleware(['auth', 'verified'])->group(function () {
     // Route::get('/cms', [CMSController::class, 'master_cms']);
+    
     //HCO Page
     Route::get('/cms-hco', [CMSController::class, 'master_cms_hco']);
     Route::post('/add-carousel', [CMSController::class, 'add_carousel_home']);
