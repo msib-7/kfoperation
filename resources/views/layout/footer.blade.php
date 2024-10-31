@@ -1,4 +1,4 @@
-<footer class="min-h-[45vh] flex bg-brand_black text-white items-center flex-col ">
+<footer class="min-h-[45vh] flex bg-brand_black text-white items-center flex-col " id="contact-us">
     <!-- brand and copyright -->
     <div class="flex flex-col w-[100%] md:w-[80%] md:justify-start my-12">
 
