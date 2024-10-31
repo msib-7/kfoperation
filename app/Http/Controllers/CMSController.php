@@ -116,13 +116,12 @@ class CMSController extends Controller
             'carousel_img' => $name,
         ];
         M_CarouselHome::create($dataSimpan);
-        return redirect('/cms')->with('success', 'Carousel Berhasil Ditambahkan!');
+        return redirect('/cms-hco')->with('success', 'Carousel Berhasil Ditambahkan!');
     }
-
     public function del_carousel_home($id)
     {
         M_CarouselHome::where('carousel_img', '=', $id)->delete();
-        return redirect(url('/cms'));
+        return redirect(url('/cms-hco'));
     }
 
     public function add_news(Request $request)
@@ -146,11 +145,20 @@ class CMSController extends Controller
             'caption' => $caption,
         ];
         M_News::create($dataSimpan);
-        return redirect('/cms')->with('success', 'News Berhasil Ditambahkan!');
+        return redirect('/cms-qs')->with('success', 'News Berhasil Ditambahkan!');
     }
     public function del_news($id)
     {
         M_News::where('news_img', '=', $id)->delete();
-        return redirect(url('/cms'));
+        return redirect(url('/cms-qs'));
+    }
+    public function view_caption($id)
+    {
+        $data = M_News::where('id', '=', $id)->first();
+        return response()->json([
+            'success' => true,
+            'message' => 'Detail Data News',
+            'data' => $data
+        ]);
     }
 }

@@ -15,17 +15,18 @@
                             <?php $no=1;?>
                             @foreach ($dataNews as $data)
                             <div class="carousel-item <?php if($no == 1){echo 'active'; $no++;}?>">
-                                <img class="d-block w-100" alt=""
+                                <img class="d-block w-100 mb-2" alt=""
                                     src="{{asset('assets/img/carousel/'.$data->news_img)}}">
                                 <div class="d-flex flex-column">
                                     <div class="row">
                                         <div class="col-sm-12 col-md-6">
-                                            <a href="#" class="btn btn-outline-info w-100">
+                                            <button class="btn btn-outline-info w-100" data-id="{{$data->id}}" id="btn-view-caption" data-bs-toggle="modal" data-bs-target="#modal-caption">
                                                 View Caption
-                                            </a>
+                                            </button>
                                         </div>
                                         <div class="col-sm-12 col-md-6">
-                                            <a href="{{url('del-news/'.$data->news_img)}}" class="btn btn-outline-danger w-100">
+                                            <a href="{{url('del-news/'.$data->news_img)}}"
+                                                class="btn btn-outline-danger w-100">
                                                 Delete
                                             </a>
                                         </div>
@@ -103,4 +104,42 @@
         </div>
     </div>
 </div>
+
+<div class="modal modal-blur fade" id="modal-caption" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <span id="text-caption"></span>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{asset('assets/js/jquery-3.7.1.min.js')}}"></script>
+<script>
+    //button create post event
+    $('body').on('click', '#btn-view-caption', function () {
+        function removeHtmlTags(input) {
+            return input.replace(/<[^>]*>/g, '');
+        }
+
+        let news_id = $(this).data('id');
+
+        //fetch detail post with ajax
+        $.ajax({
+            url: `/view-caption/${news_id}`,
+            type: "GET",
+            cache: false,
+            success: function (response) {
+                const cleanedString = removeHtmlTags(response.data.caption);
+                $('#text-caption').text(cleanedString);
+            }
+        });
+    });
+</script>
 @endsection

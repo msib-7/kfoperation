@@ -8,7 +8,7 @@ Route::get('/', [Homepage::class, 'home']);
 Route::get('/detail-news/{id}', [Homepage::class, 'detail_news']);
 
 Route::middleware('guest')->group(function () {
-    Route::get('/login-cms', [CMSController::class, 'login'])->name('login');
+    Route::get('/login', [CMSController::class, 'login'])->name('login');
     Route::post('/login-auth', [CMSController::class, 'login_auth']);
 });
 
@@ -23,6 +23,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/cms-qs', [CMSController::class, 'master_cms_qs']);
     Route::post('/add-news', [CMSController::class, 'add_news']);
     Route::get('/del-news/{id}', [CMSController::class, 'del_news']);
+    Route::get('/view-caption/{id}', [CMSController::class, 'view_caption']);
 
     Route::get('/logout', [CMSController::class, 'logout'])->name('logout');
 });

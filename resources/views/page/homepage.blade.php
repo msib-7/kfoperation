@@ -327,7 +327,7 @@
                 <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
+                        <a href="https://planttechdev.wixstudio.io/production" target="blank">
                             <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
                                 src="{{asset('assets/img/dept/production.webp')}}" alt="" />
                         </a>
@@ -340,14 +340,14 @@
                             </a>
                             <br>
                             <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
-                                data-observerable_elem href="../contact">Read more</a>
+                                data-observerable_elem target="blank" href="https://planttechdev.wixstudio.io/production">Read more</a>
                         </div>
                     </div>
                 </div>
                 <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
+                        <a href="https://paulinlinda14.wixstudio.io/hrbo" target="blank">
                             <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
                                 src="{{asset('assets/img/dept/hco.webp')}}" alt="" />
                         </a>
@@ -359,15 +359,15 @@
                                 </h5>
                             </a>
                             <br>
-                            <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
-                                data-observerable_elem href="../contact">Read more</a>
+                            <a target="blank" class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
+                                data-observerable_elem href="https://paulinlinda14.wixstudio.io/hrbo">Read more</a>
                         </div>
                     </div>
                 </div>
                 <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
+                        <a href="https://planttechdev.wixstudio.io/homepagets" target="blank">
                             <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
                                 src="{{asset('assets/img/dept/plant-tsup.webp')}}" alt="" />
                         </a>
@@ -379,15 +379,15 @@
                                 </h5>
                             </a>
                             <br>
-                            <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
-                                data-observerable_elem href="../contact">Read more</a>
+                            <a target="blank" class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
+                                data-observerable_elem href="https://planttechdev.wixstudio.io/homepagets">Read more</a>
                         </div>
                     </div>
                 </div>
                 <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
+                        <a href="https://logisticcenterkf.wixsite.com/website" target="blank">
                             <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
                                 src="{{asset('assets/img/dept/logistic.webp')}}" alt="" />
                         </a>
@@ -399,15 +399,15 @@
                                 </h5>
                             </a>
                             <br>
-                            <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
-                                data-observerable_elem href="../contact">Read more</a>
+                            <a target="blank" class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
+                                data-observerable_elem href="https://logisticcenterkf.wixsite.com/website">Read more</a>
                         </div>
                     </div>
                 </div>
                 <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
+                        <a href="https://yudityaartha.wixstudio.io/my-site-1" target="blank">
                             <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
                                 src="{{asset('assets/img/dept/qs.webp')}}" alt="" />
                         </a>
@@ -419,15 +419,15 @@
                                 </h5>
                             </a>
                             <br>
-                            <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
-                                data-observerable_elem href="../contact">Read more</a>
+                            <a target="blank" class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
+                                data-observerable_elem href="https://yudityaartha.wixstudio.io/my-site-1">Read more</a>
                         </div>
                     </div>
                 </div>
                 <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
+                        <a href="https://sites.google.com/view/mstdkf/home?authuser=0" target="blank">
                             <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
                                 src="{{asset('assets/img/dept/mstd.webp')}}" alt="" />
                         </a>
@@ -439,15 +439,15 @@
                                 </h5>
                             </a>
                             <br>
-                            <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
-                                data-observerable_elem href="../contact">Read more</a>
+                            <a target="blank" class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
+                                data-observerable_elem href="https://sites.google.com/view/mstdkf/home?authuser=0">Read more</a>
                         </div>
                     </div>
                 </div>
                 <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
+                        <a href="https://sites.google.com/view/qakfcikarang/home" target="blank">
                             <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
                                 src="{{asset('assets/img/dept/qa.webp')}}" alt="" />
                         </a>
@@ -459,15 +459,15 @@
                                 </h5>
                             </a>
                             <br>
-                            <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
-                                data-observerable_elem href="../contact">Read more</a>
+                            <a target="blank" class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
+                                data-observerable_elem href="https://sites.google.com/view/qakfcikarang/home">Read more</a>
                         </div>
                     </div>
                 </div>
                 <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
+                        <a href="https://sites.google.com/view/documentcontrolqc/home?authuser=0" target="blank">
                             <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
                                 src="{{asset('assets/img/dept/qc.webp')}}" alt="" />
                         </a>
@@ -480,74 +480,74 @@
                             </a>
                             <br>
                             <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
-                                data-observerable_elem href="../contact">Read more</a>
+                                data-observerable_elem href="https://sites.google.com/view/documentcontrolqc/home?authuser=0" target="blank">Read more</a>
                         </div>
                     </div>
                 </div>
                 <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
+                        <div>
                             <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
                                 src="{{asset('assets/img/dept/ga.webp')}}" alt="" />
-                        </a>
+                        </div>
                         <div class="p-5">
-                            <a href="#">
+                            <div>
                                 <h5
                                     class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center mb-10">
                                     General Affairs
                                 </h5>
-                            </a>
-                            <br>
+                            </div>
+                            {{-- <br>
                             <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
-                                data-observerable_elem href="../contact">Read more</a>
+                                data-observerable_elem href="">Read more</a> --}}
                         </div>
                     </div>
                 </div>
                 <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
+                        <div>
                             <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
                                 src="{{asset('assets/img/dept/fa.webp')}}" alt="" />
-                        </a>
+                        </div>
                         <div class="p-5">
-                            <a href="#">
+                            <div>
                                 <h5
                                     class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center mb-10">
                                     Finance
                                 </h5>
-                            </a>
-                            <br>
+                            </div>
+                            {{-- <br>
                             <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
-                                data-observerable_elem href="../contact">Read more</a>
+                                data-observerable_elem href="../contact">Read more</a> --}}
                         </div>
                     </div>
                 </div>
                 <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
+                        <div>
                             <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
                                 src="{{asset('assets/img/dept/purchasing.webp')}}" alt="" />
-                        </a>
+                        </div>
                         <div class="p-5">
-                            <a href="#">
+                            <div>
                                 <h5
                                     class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center mb-10">
                                     Purchasing
                                 </h5>
-                            </a>
-                            <br>
+                            </div>
+                            {{-- <br>
                             <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
-                                data-observerable_elem href="../contact">Read more</a>
+                                data-observerable_elem href="../contact">Read more</a> --}}
                         </div>
                     </div>
                 </div>
                 <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
+                        <a href="https://planttechdev.wixsite.com/website-14" target="blank">
                             <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
                                 src="{{asset('assets/img/dept/engineering.webp')}}" alt="" />
                         </a>
@@ -559,35 +559,35 @@
                                 </h5>
                             </a>
                             <br>
-                            <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
-                                data-observerable_elem href="../contact">Read more</a>
+                            <a target="blank" class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
+                                data-observerable_elem href="https://planttechdev.wixsite.com/website-14">Read more</a>
                         </div>
                     </div>
                 </div>
                 <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
+                        <div>
                             <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
                                 src="{{asset('assets/img/dept/rnd.webp')}}" alt="" />
-                        </a>
+                        </div>
                         <div class="p-5">
-                            <a href="#">
+                            <div>
                                 <h5
                                     class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center mb-10">
                                     Research and Development
                                 </h5>
-                            </a>
-                            <br>
+                            </div>
+                            {{-- <br>
                             <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
-                                data-observerable_elem href="../contact">Read more</a>
+                                data-observerable_elem href="../contact">Read more</a> --}}
                         </div>
                     </div>
                 </div>
                 <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
+                        <a href="https://tskalbefarma.wixsite.com/tsklb/blank-1" target="blank">
                             <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
                                 src="{{asset('assets/img/dept/ts.webp')}}" alt="" />
                         </a>
@@ -599,15 +599,15 @@
                                 </h5>
                             </a>
                             <br>
-                            <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
-                                data-observerable_elem href="../contact">Read more</a>
+                            <a target="blank" class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
+                                data-observerable_elem href="https://tskalbefarma.wixsite.com/tsklb/blank-1">Read more</a>
                         </div>
                     </div>
                 </div>
                 <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
+                        <a href="https://sites.google.com/view/ppicsitekalbe" target="blank">
                             <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
                                 src="{{asset('assets/img/dept/ppic.webp')}}" alt="" />
                         </a>
@@ -620,7 +620,7 @@
                             </a>
                             <br>
                             <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
-                                data-observerable_elem href="../contact">Read more</a>
+                                data-observerable_elem href="https://sites.google.com/view/ppicsitekalbe" target="blank">Read more</a>
                         </div>
                     </div>
                 </div>
@@ -699,7 +699,6 @@
                 }
             });
         });
-
     </script>
 </body>
 

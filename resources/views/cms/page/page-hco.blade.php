@@ -15,7 +15,7 @@
                             <?php $no=1;?>
                             @foreach ($dataCarousel as $data)
                             <div class="carousel-item <?php if($no == 1){echo 'active'; $no++;}?>">
-                                <img class="d-block w-100" alt=""
+                                <img class="d-block w-100 mb-2" alt=""
                                     src="{{asset('assets/img/carousel/'.$data->carousel_img)}}">
                                 <div class="d-flex flex-column">
                                     <div class="row">
