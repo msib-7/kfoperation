@@ -487,6 +487,66 @@
                 <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <a href="https://planttechdev.wixsite.com/website-14" target="blank">
+                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
+                                src="{{asset('assets/img/dept/engineering.webp')}}" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5
+                                    class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center mb-10">
+                                    Engineering
+                                </h5>
+                            </a>
+                            <br>
+                            <a target="blank" class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
+                                data-observerable_elem href="https://planttechdev.wixsite.com/website-14">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
+                    <div
+                        class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <a href="https://tskalbefarma.wixsite.com/tsklb/blank-1" target="blank">
+                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
+                                src="{{asset('assets/img/dept/ts.webp')}}" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5
+                                    class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center mb-10">
+                                    Technical Service
+                                </h5>
+                            </a>
+                            <br>
+                            <a target="blank" class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
+                                data-observerable_elem href="https://tskalbefarma.wixsite.com/tsklb/blank-1">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
+                    <div
+                        class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <a href="https://sites.google.com/view/ppicsitekalbe" target="blank">
+                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
+                                src="{{asset('assets/img/dept/ppic.webp')}}" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5
+                                    class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center mb-10">
+                                    PPIC
+                                </h5>
+                            </a>
+                            <br>
+                            <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
+                                data-observerable_elem href="https://sites.google.com/view/ppicsitekalbe" target="blank">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
+                    <div
+                        class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <div>
                             <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
                                 src="{{asset('assets/img/dept/ga.webp')}}" alt="" />
@@ -547,26 +607,6 @@
                 <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="https://planttechdev.wixsite.com/website-14" target="blank">
-                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
-                                src="{{asset('assets/img/dept/engineering.webp')}}" alt="" />
-                        </a>
-                        <div class="p-5">
-                            <a href="#">
-                                <h5
-                                    class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center mb-10">
-                                    Engineering
-                                </h5>
-                            </a>
-                            <br>
-                            <a target="blank" class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
-                                data-observerable_elem href="https://planttechdev.wixsite.com/website-14">Read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
-                    <div
-                        class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <div>
                             <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
                                 src="{{asset('assets/img/dept/rnd.webp')}}" alt="" />
@@ -581,46 +621,6 @@
                             {{-- <br>
                             <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
                                 data-observerable_elem href="../contact">Read more</a> --}}
-                        </div>
-                    </div>
-                </div>
-                <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
-                    <div
-                        class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="https://tskalbefarma.wixsite.com/tsklb/blank-1" target="blank">
-                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
-                                src="{{asset('assets/img/dept/ts.webp')}}" alt="" />
-                        </a>
-                        <div class="p-5">
-                            <a href="#">
-                                <h5
-                                    class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center mb-10">
-                                    Technical Service
-                                </h5>
-                            </a>
-                            <br>
-                            <a target="blank" class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
-                                data-observerable_elem href="https://tskalbefarma.wixsite.com/tsklb/blank-1">Read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="opacity-0.transition-all duration-[0.6s] hover:scale-105">
-                    <div
-                        class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="https://sites.google.com/view/ppicsitekalbe" target="blank">
-                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
-                                src="{{asset('assets/img/dept/ppic.webp')}}" alt="" />
-                        </a>
-                        <div class="p-5">
-                            <a href="#">
-                                <h5
-                                    class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center mb-10">
-                                    PPIC
-                                </h5>
-                            </a>
-                            <br>
-                            <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-md text min-w-[7rem] opacity-0 transition-all duration-[1.2s] flex justify-center"
-                                data-observerable_elem href="https://sites.google.com/view/ppicsitekalbe" target="blank">Read more</a>
                         </div>
                     </div>
                 </div>
