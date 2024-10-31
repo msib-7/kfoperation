@@ -18,8 +18,8 @@
     </div>
 
 
-    <nav class="bg-white dark:bg-gray-900 fixed w-full z-50 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-7">
+    <nav class="bg-white dark:bg-gray-900 fixed w-full z-40 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:p-7">
             <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="{{asset('assets/img/kalbe_farma.png')}}" alt="nexcent-logo"
                     style="min-width: 50px; max-width: 100px; width: 100%;">

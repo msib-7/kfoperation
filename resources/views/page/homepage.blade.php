@@ -5,7 +5,8 @@
     @include('layout.head')
 </head>
 
-<body class="overflow-x-hidden" style="background-image: url('/assets/img/bglineB.svg'); background-repeat: repeat-y;">
+<body class="overflow-x-hidden bg-silver"
+    style="background-image: url('/assets/img/bglineB.svg'); background-repeat: repeat-y;">
     {{-- Header --}}
     <section>
         @include('layout.header')
@@ -13,11 +14,12 @@
 
     <!-- Home Carousel section -->
     <section class="home" id="home">
-        <div id="default-carousel" class="relative w-full lg:h-[96vh] pt-[10vh]" data-carousel="slide">
+        <div id="default-carousel" class="relative w-full h-[40vh] lg:h-[96vh] pt-[15vh] lg:pt-[1vh]"
+            data-carousel="slide">
             <!-- Carousel wrapper -->
             <div class="relative min-h-full overflow-hidden">
                 <!-- Item 1 -->
-                <div class="hidden duration-700 ease-in-out object-cover grid items-center" data-carousel-item>
+                {{-- <div class="hidden duration-700 ease-in-out object-cover grid items-center" data-carousel-item>
                     <div class="grid grid-cols-none md:grid-cols-2 md:mr-8 md:ml-8 justify-center items-center">
                         <div>
                             <!-- text content -->
@@ -36,73 +38,47 @@
                         <div class="flex hidden md:inline-flex justify-center">
                             <!-- Elevate Your Business section -->
                             <img data-observerable_elem src="{{asset('assets/illustrations/carousel2.png')}}"
-                                alt="Person using smartphone" class="w-3/5 opacity-0 transition-all duration-[0.2s]">
+                alt="Person using smartphone" class="w-3/5 opacity-0 transition-all duration-[0.2s]">
 
-                        </div>
-                    </div>
-                </div>
-                <!-- Item 2 -->
-                <div class="hidden duration-700 ease-in-out object-cover grid items-center" data-carousel-item>
-                    <img src="{{asset('assets/img/carousel/home1.png')}}"
-                        class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-                        style="object-fit: cover; height: 100%;">
-                </div>
-                <!-- Item 3 -->
-                <div class="hidden duration-700 ease-in-out object-cover grid items-center" data-carousel-item>
-                    <img src="{{asset('assets/img/carousel/home2.png')}}"
-                        class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-                        style="object-fit: cover; height: 100%;">
-                </div>
-                <!-- Item 4 -->
-                <div class="hidden duration-700 ease-in-out object-cover grid items-center" data-carousel-item>
-                    <div class="grid grid-cols-none md:grid-cols-2 md:mr-8 md:ml-8 justify-center items-center">
-                        <div>
-                            <!-- text content -->
-                            <div class="transition-all duration-[0.2s] opacity-0 txt-content md:w-7/8 w-full"
-                                data-observerable_elem>
-                                <h1 class="text-3xl text-center md:text-6xl font-bold text-d_grey">
-                                    Memberikan Solusi <br>
-                                    <span class="text-brand_primary"> Digital Kesehatan</span>
-                                </h1>
-                            </div>
-                        </div>
-                        <div class="flex hidden md:inline-flex justify-center">
-                            <!-- Elevate Your Business section -->
-                            <img data-observerable_elem src="{{asset('assets/illustrations/carousel2.png')}}"
-                                alt="Person using smartphone" class="w-3/5 opacity-0 transition-all duration-[0.2s]">
-
-                        </div>
-                    </div>
-                </div>
             </div>
-            <!-- Slider controls -->
-            <button type="button"
-                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                data-carousel-prev>
-                <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-6 text-gray-200 hover:text-gray-700 transition-all duration-[0.3s]">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-                    </svg>
+        </div>
+        </div> --}}
+        <!-- Item 2 -->
+        @foreach ($dataCarousel as $data)
+        <div class="hidden duration-700 ease-in-out object-cover grid items-center" data-carousel-item>
+            <img src="{{asset('assets/img/carousel/'.$data->carousel_img)}}"
+                class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2 object-contain h-full">
+        </div>
+        @endforeach
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 text-gray-200 hover:text-gray-700 transition-all duration-[0.3s]">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg>
 
-                    <span class="sr-only">Previous</span>
-                </span>
-            </button>
-            <button type="button"
-                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                data-carousel-next>
-                <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-6 text-gray-200 hover:text-gray-700 transition-all duration-[0.3s]">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                    </svg>
-                    <span class="sr-only">Next</span>
-                </span>
-            </button>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 text-gray-200 hover:text-gray-700 transition-all duration-[0.3s]">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
         </div>
     </section>
 
@@ -121,17 +97,18 @@
                         position: relative;
                         height: 60vh;
                         width: 100%;
-                        background-image: url('/assets/img/img-about.webp');
+                        background-image: url('/assets/img/about-img.png');
                         background-size: cover;
                         background-position: center;
                         -webkit-border-radius: 10px;
                         -moz-border-radius: 10px;
                         border-radius: 10px;
-                        -moz-box-shadow: inset 650px 0px 990px -200px #fff;
-                        -webkit-box-shadow: inset 650px 0px 990px -200px #fff;
-                        -o-box-shadow: inset 650px 0px 990px -200px #fff;
-                        box-shadow: inset 550px 0px 990px -200px #fff;
+                        -moz-box-shadow: inset 250px -50px 100px -100px rgb(245 247 250 / var(--tw-bg-opacity));
+                        -webkit-box-shadow: inset 250px -50px 100px -100px rgb(245 247 250 / var(--tw-bg-opacity));
+                        -o-box-shadow: inset 250px -50px 100px -100px rgb(245 247 250 / var(--tw-bg-opacity));
+                        box-shadow: inset 250px -50px 100px -100px rgb(245 247 250 / var(--tw-bg-opacity));
                     }
+
                     .image-about:before,
                     .image-about:after {
                         content: '';
@@ -144,8 +121,7 @@
                 <!-- text content -->
                 <div>
                     <h1 class="text-sm text-gray-800 md:text-md lg:text-2xl md:px-8 justify-center item-center text-justify transition-all duration-[1s]"
-                        style="background-image: url('/assets/img/bglineB.svg')"
-                        data-observerable_elem>
+                        style="background-image: url('/assets/img/bglineB.svg')" data-observerable_elem>
                         Kalbe's Prescription Pharmaceuticals Division operates with a comprehensive approach,
                         spanning production, quality control, and quality assurance to ensure the delivery of
                         safe and effective medications. Production facilities are equipped to manufacture a
@@ -160,10 +136,7 @@
                         Xonce, and Zegavit.
                     </h1>
                 </div>
-                <div class="image-about flex flex-wrap items-center justify-center">
-                    <div >
-                        <img src="{{asset('assets/img/logo_only.png')}}" alt="KalbeFarma" class="w-44 mt-10 mb-5 w-[50vh] drop-shadow-lg">
-                    </div>
+                <div class="image-about">
                 </div>
 
                 {{-- <div class="flex flex-wrap justify-end mb-10">
@@ -191,17 +164,16 @@
                 <!-- Carousel wrapper -->
                 <div class="relative min-h-[25vh] md:min-h-[30vh] lg:min-h-[65vh] overflow-hidden rounded-lg mr-8 ml-8">
                     <!-- Item 1 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="{{asset('assets/img/achivement1.png')}}"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                            style="object-fit: scale-down; height: 100%;">
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <img src="{{asset('assets/img/format-size.png')}}"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                            style="object-fit: scale-down; height: 100%;">
-                    </div>
+                    @foreach ($dataNews as $data)
+                    <button id="news-detail" data-id="{{ $data->id }}" data-modal-target="modal-news"
+                        data-modal-toggle="modal-news">
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="{{asset('assets/img/carousel/'.$data->news_img)}}" id="news-img"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-sm"
+                                style="object-fit: scale-down; height: 100%;">
+                        </div>
+                    </button>
+                    @endforeach
                 </div>
                 <!-- Slider controls -->
                 <button type="button"
@@ -234,7 +206,7 @@
     </section>
 
     <!-- Collaboration -->
-    <section class="community grid justify-center mt-14" id="collaborations">
+    <section class="community grid justify-center " id="collaborations">
         <div class="lg:pt-[15vh]">
             <!-- heading and subheading -->
             <h1 class="text-center text-xl text-gray-700 lg:text-5xl mt-4 mb-4 lg:pb-10 font-semibold opacity-0 transition-all duration-[1.3s]"
@@ -344,7 +316,7 @@
     </section>
 
     <!-- Departments -->
-    <section class="community grid justify-center mt-14" id="departments">
+    <section class="community grid justify-center mt-10" id="departments">
         <div class="pt-[2vh] lg:pt-[12vh] pb-[1vh]">
             <!-- heading and subheading -->
             <h1 class="text-center text-xl text-gray-700 lg:text-5xl mt-4 mb-4 pb-8 font-semibold opacity-0 transition-all duration-[1.3s]"
@@ -356,7 +328,8 @@
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full" src="{{asset('assets/img/dept/production.webp')}}" alt="" />
+                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
+                                src="{{asset('assets/img/dept/production.webp')}}" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
@@ -375,7 +348,8 @@
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full" src="{{asset('assets/img/dept/hco.webp')}}" alt="" />
+                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
+                                src="{{asset('assets/img/dept/hco.webp')}}" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
@@ -394,7 +368,8 @@
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full" src="{{asset('assets/img/dept/plant-tsup.webp')}}" alt="" />
+                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
+                                src="{{asset('assets/img/dept/plant-tsup.webp')}}" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
@@ -413,7 +388,8 @@
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full" src="{{asset('assets/img/dept/logistic.webp')}}" alt="" />
+                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
+                                src="{{asset('assets/img/dept/logistic.webp')}}" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
@@ -432,7 +408,8 @@
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full" src="{{asset('assets/img/dept/qs.webp')}}" alt="" />
+                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
+                                src="{{asset('assets/img/dept/qs.webp')}}" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
@@ -451,7 +428,8 @@
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full" src="{{asset('assets/img/dept/mstd.webp')}}" alt="" />
+                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
+                                src="{{asset('assets/img/dept/mstd.webp')}}" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
@@ -470,7 +448,8 @@
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full" src="{{asset('assets/img/dept/qa.webp')}}" alt="" />
+                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
+                                src="{{asset('assets/img/dept/qa.webp')}}" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
@@ -489,7 +468,8 @@
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full" src="{{asset('assets/img/dept/qc.webp')}}" alt="" />
+                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
+                                src="{{asset('assets/img/dept/qc.webp')}}" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
@@ -508,7 +488,8 @@
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full" src="{{asset('assets/img/dept/ga.webp')}}" alt="" />
+                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
+                                src="{{asset('assets/img/dept/ga.webp')}}" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
@@ -527,7 +508,8 @@
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full" src="{{asset('assets/img/dept/fa.webp')}}" alt="" />
+                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
+                                src="{{asset('assets/img/dept/fa.webp')}}" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
@@ -546,7 +528,8 @@
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full" src="{{asset('assets/img/dept/purchasing.webp')}}" alt="" />
+                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
+                                src="{{asset('assets/img/dept/purchasing.webp')}}" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
@@ -565,7 +548,8 @@
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full" src="{{asset('assets/img/dept/engineering.webp')}}" alt="" />
+                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
+                                src="{{asset('assets/img/dept/engineering.webp')}}" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
@@ -584,7 +568,8 @@
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full" src="{{asset('assets/img/dept/rnd.webp')}}" alt="" />
+                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
+                                src="{{asset('assets/img/dept/rnd.webp')}}" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
@@ -603,7 +588,8 @@
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full" src="{{asset('assets/img/dept/ts.webp')}}" alt="" />
+                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
+                                src="{{asset('assets/img/dept/ts.webp')}}" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
@@ -622,7 +608,8 @@
                     <div
                         class="mt-2 max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full" src="{{asset('assets/img/dept/ppic.webp')}}" alt="" />
+                            <img class="rounded-t-lg min-h-[35vh] max-h-[35vh] min-w-full"
+                                src="{{asset('assets/img/dept/ppic.webp')}}" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
@@ -642,7 +629,7 @@
     </section>
 
     <!-- Quote -->
-    <section class=" h-[40vh] flex flex-col justify-center items-center p-4 gap-3 bg-silver">
+    <section class=" h-[40vh] flex flex-col justify-center items-center p-4 gap-3">
         <h1
             class="text-3xl md:text-5xl font-bold text-center py-4 hover:decoration-dotted hover:decoration-brand_primary hover:underline underline-offset-4">
             To Improve Health <br><span class="text-brand_primary">For A Better Life</span>
@@ -652,6 +639,68 @@
     <!-- footer-->
     @include('layout.footer')
 
+    {{-- modal --}}
+    <!-- Main modal -->
+    <div id="modal-news" data-modal-placement="center-center" tabindex="-1"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-6xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div
+                    class="flex items-center justify-between px-4 py-2 md:px-5 md:py-2 border-b rounded-t dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Latest News
+                    </h3>
+                    <button type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="modal-news">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5 space-y-4">
+                    <img class="h-auto max-w-full" src="" id="modal-news-img" alt="image description">
+                    <p id="news-caption" class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{asset('assets/js/jquery-3.7.1.min.js')}}"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        //button create post event
+        $('body').on('click', '#news-detail', function () {
+            function removeHtmlTags(input) {
+                return input.replace(/<[^>]*>/g, '');
+            }
+
+            let news_id = $(this).data('id');
+
+            //fetch detail post with ajax
+            $.ajax({
+                url: `/detail-news/${news_id}`,
+                type: "GET",
+                cache: false,
+                success: function (response) {
+                    $('#modal-news-img').attr('src', '/assets/img/carousel/' + response.data
+                        .news_img);
+
+                    const cleanedString = removeHtmlTags(response.data.caption);
+                    $('#news-caption').text(cleanedString);
+                }
+            });
+        });
+
+    </script>
 </body>
 
 </html>
