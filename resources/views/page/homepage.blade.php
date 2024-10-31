@@ -694,8 +694,8 @@
                     $('#modal-news-img').attr('src', '/assets/img/carousel/' + response.data
                         .news_img);
 
-                    const cleanedString = removeHtmlTags(response.data.caption);
-                    $('#news-caption').text(cleanedString);
+                    $('#news-caption').text("");
+                    $('#news-caption').text(removeHtmlTags(response.data.caption));
                 }
             });
         });
